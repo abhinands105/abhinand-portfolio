@@ -115,6 +115,9 @@
   padding: 0.75rem;
 }
 
+body, header, footer, section, .card {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
 
 
 
@@ -137,6 +140,22 @@ img:hover {
         flex-direction: column;
       }
     }
+
+/* Optional Light Theme Overrides */
+body.light {
+  --bg: #ffffff;
+  --card: #f3f4f6;
+  --text: #1e293b;
+  --accent: #2563eb;
+}
+
+/* Smooth transition for theme switching */
+body, header, footer, section, .card {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+
   </style>
 </head>
 <body>
@@ -292,6 +311,34 @@ img:hover {
 <footer style="text-align: center; padding: 20px 0; background: var(--card); color: var(--text); font-size: 0.9em;">
   &copy; 2025 Abhinand.S | AI Portfolio | Built with 💻 in GitHub Codespaces
 </footer>
+
+
+
+<script>
+  // Create and add theme toggle button dynamically
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.createElement("button");
+    toggleButton.textContent = "Toggle Theme 🌗";
+    toggleButton.style.cssText = `
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: var(--card);
+      color: var(--text);
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    `;
+    toggleButton.onclick = () => {
+      document.body.classList.toggle("light");
+    };
+    document.body.appendChild(toggleButton);
+  });
+</script>
 
 
 </body>

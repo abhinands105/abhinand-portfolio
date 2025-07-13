@@ -80,7 +80,21 @@
     a:hover {
   color: var(--accent);
 }
- 
+ .card:hover {
+  transform: scale(1.02);
+  background-color: #273549; /* Slight lift effect */
+  cursor: pointer;
+}
+#contact i {
+  font-size: 1.8rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+#contact i:hover {
+  transform: scale(1.1);
+  color: var(--accent) !important;
+}
+
 
 
 
@@ -111,6 +125,16 @@ img:hover {
   <h1>Abhinand.S </h1>
   <p>AI & Data Science Student | ML Enthusiast | Project-Focused Learner</p>
 </header>
+<section id="hero" style="text-align: center; padding: 4rem 1rem; background: var(--bg); color: var(--text);">
+  <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">👋 Hi, I'm Abhinand</h2>
+  <p style="font-size: 1.25rem; max-width: 600px; margin: auto;">
+    AI & ML enthusiast focused on real-world problem solving through deep learning, computer vision, and data-driven projects.
+  </p>
+  <a href="#projects" style="display: inline-block; margin-top: 1.5rem; padding: 12px 24px; background-color: var(--accent); color: #000; border-radius: 8px; font-weight: bold; text-decoration: none;">See My Work ↓</a>
+</section>
+
+
+
 <section>
   <h2>About Me</h2>
   <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
@@ -158,17 +182,26 @@ img:hover {
     </div>
   </section>
 
-<section>
+<section id="projects">
   <h2>Projects</h2>
   <div class="card-grid">
     <a href="https://github.com/abhinands105/violence-detection-cnn-lstm" target="_blank" class="card" style="text-decoration: none; color: inherit;">
+      <img src="VIOLENCE.jpg" alt="Violence Detection Project" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
       <h3>📹 Violence Detection System</h3>
-      <p>
-        End-to-end deep learning solution using CNN+LSTM to detect violence in real-time video surveillance. Includes Telegram alerts and adversarial robustness testing.
-      </p>
+      <p>Real-time CNN+LSTM-based solution with adversarial robustness and live alerting.</p>
     </a>
+
+    <!-- You can duplicate below card to add more projects -->
+    <!--
+    <a href="https://your-project-link.com" target="_blank" class="card" style="text-decoration: none; color: inherit;">
+      <img src="your-thumbnail.jpg" alt="Project Name" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+      <h3>📁 Project Name</h3>
+      <p>Brief description about the project in one or two lines.</p>
+    </a>
+    -->
   </div>
 </section>
+
 
 
 <section>
@@ -186,23 +219,23 @@ img:hover {
 
 <section>
   <h2>Certifications</h2>
-  <ul>
-    <li><a href="https://verify.skilljar.com/c/y3prbbi6ov6b" target="_blank">Dataiku Advanced Designer</a></li>
-    <li><a href="https://verify.skilljar.com/c/j8cj9z8xk7f9" target="_blank">Dataiku Core Designer</a></li>
-    <li><a href="https://verify.skilljar.com/c/mn6sxxznwfpv" target="_blank">Dataiku Generative AI Practitioner</a></li>
-    <li><a href="https://verify.skilljar.com/c/94vioc4e27rp" target="_blank">Dataiku ML Practitioner</a></li>
-    <li><a href="https://courses.cognitiveclass.ai/certificates/ccfadb1164b94beb9572450c24c34150" target="_blank">Data Analysis with Python – Cognitive Class</a></li>
-    <li><a href="https://courses.cognitiveclass.ai/certificates/2afb886ab51d450fa7e0b39b37908bb6" target="_blank">Python 101 for Data Science – Cognitive Class</a></li>
-    <li><a href="https://courses.cognitiveclass.ai/certificates/c5b68c466b9d4b69b34a902ae699bd02" target="_blank">Data Science 101 – ULSA</a></li>
-    <li><a href="https://courses.cognitiveclass.ai/certificates/6542ea63354c45e4b88509b267e369d1" target="_blank">Accessing Hadoop Data Using Hive – ULSA</a></li>
-    <li><a href="https://courses.cognitiveclass.ai/certificates/6506175c4f2a42f8b60086b0891fa347" target="_blank">Apache Pig 101 – ULSA</a></li>
-    <li><a href="https://courses.cognitiveclass.ai/certificates/2d072bef0c3b4b4fac5520ddd07e7d9c" target="_blank">Data Science with Scala – IBM</a></li>
-    <li><a href="https://courses.cognitiveclass.ai/certificates/24f42db1113b41a3a81e48756d9e566d" target="_blank">Data Visualization with Python – IBM</a></li>
-    <li><a href="https://simpli.app.link/SWvjCyJ4kQb" target="_blank">R Programming for Beginners – Simplilearn</a></li>
-    <li><a href="ai-agratas.jpg" target="_blank">Artificial Intelligence – Agratas EduTech</a></li>
-    <li><a href="industrial-training-ai-agratas.jpg" target="_blank">Industrial Training – AI – Agratas EduTech</a></li>
-    <li><a href="nptel.jpg" target="_blank">Python for Data Science – NPTEL</a></li>
-  </ul>
+  <div class="card-grid">
+    <a href="https://verify.skilljar.com/c/y3prbbi6ov6b" class="card" target="_blank">Dataiku Advanced Designer</a>
+    <a href="https://verify.skilljar.com/c/j8cj9z8xk7f9" class="card" target="_blank">Dataiku Core Designer</a>
+    <a href="https://verify.skilljar.com/c/mn6sxxznwfpv" class="card" target="_blank">Dataiku Generative AI Practitioner</a>
+    <a href="https://verify.skilljar.com/c/94vioc4e27rp" class="card" target="_blank">Dataiku ML Practitioner</a>
+    <a href="https://courses.cognitiveclass.ai/certificates/ccfadb1164b94beb9572450c24c34150" class="card" target="_blank">Data Analysis with Python – Cognitive Class</a>
+    <a href="https://courses.cognitiveclass.ai/certificates/2afb886ab51d450fa7e0b39b37908bb6" class="card" target="_blank">Python 101 for Data Science – Cognitive Class</a>
+    <a href="https://courses.cognitiveclass.ai/certificates/c5b68c466b9d4b69b34a902ae699bd02" class="card" target="_blank">Data Science 101 – ULSA</a>
+    <a href="https://courses.cognitiveclass.ai/certificates/6542ea63354c45e4b88509b267e369d1" class="card" target="_blank">Accessing Hadoop Data Using Hive – ULSA</a>
+    <a href="https://courses.cognitiveclass.ai/certificates/6506175c4f2a42f8b60086b0891fa347" class="card" target="_blank">Apache Pig 101 – ULSA</a>
+    <a href="https://courses.cognitiveclass.ai/certificates/2d072bef0c3b4b4fac5520ddd07e7d9c" class="card" target="_blank">Data Science with Scala – IBM</a>
+    <a href="https://courses.cognitiveclass.ai/certificates/24f42db1113b41a3a81e48756d9e566d" class="card" target="_blank">Data Visualization with Python – IBM</a>
+    <a href="https://simpli.app.link/SWvjCyJ4kQb" class="card" target="_blank">R Programming for Beginners – Simplilearn</a>
+    <a href="ai-agratas.jpg" class="card" target="_blank">Artificial Intelligence – Agratas EduTech</a>
+    <a href="industrial-training-ai-agratas.jpg" class="card" target="_blank">Industrial Training – AI – Agratas EduTech</a>
+    <a href="nptel.jpg" class="card" target="_blank">Python for Data Science – NPTEL</a>
+  </div>
 </section>
 
 

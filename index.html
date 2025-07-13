@@ -94,6 +94,13 @@
   transform: scale(1.1);
   color: var(--accent) !important;
 }
+.project-card {
+  flex: 1 1 100%; /* Full width on small screens */
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  padding: 0.75rem;
+}
 
 
 
@@ -185,7 +192,7 @@ img:hover {
 <section id="projects">
   <h2>Projects</h2>
   <div class="card-grid">
-    <a href="https://github.com/abhinands105/violence-detection-cnn-lstm" target="_blank" class="card" style="text-decoration: none; color: inherit;">
+    <a href="https://github.com/abhinands105/violence-detection-cnn-lstm" target="_blank" class="card project-card" style="text-decoration: none; color: inherit;">
       <img src="VIOLENCE.jpg" alt="Violence Detection Project" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
       <h3>📹 Violence Detection System</h3>
       <p>Real-time CNN+LSTM-based solution with adversarial robustness and live alerting.</p>

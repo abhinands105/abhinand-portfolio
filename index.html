@@ -75,6 +75,10 @@
       color: var(--accent);
       text-decoration: none;
     }
+img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
 
     footer {
       text-align: center;
@@ -102,7 +106,10 @@
   <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
     
     <!-- Profile Image -->
-    <img src="profile.jpg" alt="Abhinand S." style="width: 160px; border-radius: 50%; border: 2px solid var(--accent); box-shadow: 0 0 10px rgba(0,0,0,0.4);">
+    <img src="profile.jpg" alt="Abhinand S." loading="lazy"
+  style="width: 160px; max-width: 100%; height: auto; border-radius: 50%;
+         border: 2px solid var(--accent); box-shadow: 0 0 10px rgba(0,0,0,0.4);">
+
     
     <!-- Description Text -->
     <div style="flex: 1; min-width: 250px;">
@@ -154,15 +161,30 @@
   </div>
 </section>
 
+<section>
+  <h2>Certifications</h2>
+  <ul>
+    <li>Deep Learning Specialization – DeepLearning.AI (Coursera)</li>
+    <li>Machine Learning with Python – IBM (Coursera)</li>
+    <li>Intro to Machine Learning – Kaggle Learn</li>
+  </ul>
+</section>
+
+
+
+
 
 <section>
   <h2>Contact</h2>
   <p><strong>📱 Mobile:</strong> 9207029155</p>
   <p><strong>📧 Email:</strong> <a href="mailto:abhinands903@gmail.com">abhinands903@gmail.com</a></p>
 
-  <p><strong>🐙 GitHub:</strong> <a href="https://github.com/abhinands105" target="_blank">github.com/abhinands105</a></p>
+  <p><strong>🐙 GitHub:</strong> <a href="https://github.com/abhinands105" target="_blank" rel="noopener">GitHub</a>
   <p><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/abhinand-s-48154a318/" target="_blank">linkedin.com/in/abhinand-s-48154a318</a></p>
+  <p><strong>📄 Resume:</strong> <a href="resume.pdf" target="_blank">Download PDF</a></p>
+
 </section>
+
 
 
 </main>

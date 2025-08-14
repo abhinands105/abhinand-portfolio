@@ -82,24 +82,30 @@
       transition: transform 0.2s ease;
     }
 
-    .card:hover {
-      transform: scale(1.02);
-      background-color: #273549;
-      cursor: pointer;
-    }
+.card:hover {
+  transform: scale(1.02);
+  background-color: #273549;
+  cursor: pointer;
+}
 
-    .project-card {
-      flex: 1 1 100%;
-      max-width: 400px;
-      margin: 0 auto;
-      font-size: 0.95rem;
-      padding: 0.75rem;
-    }
+.project-card {
+  flex: 1 1 45%; /* allows two cards per row */
+  max-width: 250px; /* smaller card size */
+  margin: 0 auto;
+  font-size: 0.85rem; /* smaller text */
+  padding: 0.5rem; /* reduced padding */
+}
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
+.project-card img {
+  max-height: 150px; /* control image height */
+  object-fit: cover; /* keep proportion */
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 
     a:hover {
       color: var(--accent);
